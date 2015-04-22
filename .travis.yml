@@ -1,0 +1,8 @@
+language: php
+env:
+  global:
+    - PHP_PROTOBUF_VERSION=0.10
+php:
+  - 5.3
+install:
+  - ./bin/install-php-protobuf.sh
