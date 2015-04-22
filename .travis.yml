@@ -5,4 +5,4 @@ env:
 php:
   - 5.3
 install:
-  - ./bin/install-php-protobuf.sh
+  - sh ./bin/install-php-protobuf.sh
