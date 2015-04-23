@@ -4,5 +4,12 @@ env:
     - PHP_PROTOBUF_VERSION=0.10
 php:
   - 5.3
+
 install:
   - sh ./bin/install-php-protobuf.sh
+
+before:
+  - php php-protobuf --use-namespaces src/searchrequest.proto
+
+script:
+  - php -l src/pb_proto_searchrequest.php
