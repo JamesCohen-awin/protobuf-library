@@ -12,4 +12,4 @@ before_script:
   - php php-protobuf/protoc-php.php --use-namespaces src/searchrequest.proto
 
 script:
-  - php -l src/pb_proto_searchrequest.php
+  - php -l pb_proto_searchrequest.php
