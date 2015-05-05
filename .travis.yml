@@ -11,7 +11,7 @@ install:
   - sh ./bin/install-php-protobuf.sh
 
 before_script:
-  - php php-protobuf/protoc-php.php --use-namespaces src/searchrequest.proto
+  - php php-protobuf/protoc-php.php --use-namespaces src/simple-searchrequest.proto
 
 script:
   - ls *.php | xargs -n1 php -l
