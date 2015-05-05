@@ -1,7 +1,9 @@
 language: php
+
 env:
   global:
     - PHP_PROTOBUF_VERSION=0.10
+
 php:
   - 5.3
 
@@ -15,4 +17,13 @@ script:
   - ls *.php | xargs -n1 php -l
 
 after_success:
- - tar -cvzf probuf-library.tar.gz *.php
+  - tar -cvzf probuf-library.tar.gz *.php
+
+deploy:
+  provider: releases
+  api_key:
+    secure: EVOQjMzLhls6hSdpJBBRADfgm2WLcRAWawHGidHpwDbOxpVJg7W37+7nZMaxJ4sWMzkZipFUjuaK1leIkrJ1mhwahkX9/aputiUFBbkRVGvVdgjKGksAgnWvQIQLrKaxDv0wNfeGGZ3hM7rq0w7I9QQ4GvVRy+SDsKPPK9Z98XU=
+  file: probuf-library.tar.gz
+  on:
+    tags: true
+    repo: JamesCohen-awin/protobuf-library
