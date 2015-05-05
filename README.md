@@ -2,7 +2,7 @@
 
 ## Concept
 
-* ~~Create a dummy Protobuf library (this repo)
+* ~~Create a dummy Protobuf library (this repo)~~
 * Add a Travis job that runs when a release is tagged:
   * ~~Build the PHP classes from the .proto definition using php-protobuf~~
   * ~~Run some kind of tests (lint initially?) to validate the PHP classes~~
