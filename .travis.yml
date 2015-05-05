@@ -12,6 +12,7 @@ install:
 
 before_script:
   - php php-protobuf/protoc-php.php --use-namespaces src/simple-searchrequest.proto
+  - php php-protobuf/protoc-php.php --use-namespaces src/searchrequest.proto
 
 script:
   - ls *.php | xargs -n1 php -l
