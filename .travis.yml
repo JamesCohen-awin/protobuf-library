@@ -10,7 +10,7 @@ install:
 
 before_script:
   - mkdir build && cd build
-  - php php-protobuf/protoc-php.php --use-namespaces ../src/searchrequest.proto
+  - php ../php-protobuf/protoc-php.php --use-namespaces src/searchrequest.proto
 
 script:
   - php -l pb_proto_searchrequest.php
