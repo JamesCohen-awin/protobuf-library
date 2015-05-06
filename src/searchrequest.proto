@@ -1,6 +1,6 @@
 // from https://developers.google.com/protocol-buffers/docs/proto#enum
 
-import "enum-corpus.proto";
+import "src/enum-corpus.proto";
 
 message SearchRequest {
     required string query = 1;
