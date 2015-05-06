@@ -1,4 +1,4 @@
-# from https://developers.google.com/protocol-buffers/docs/proto#enum
+// from https://developers.google.com/protocol-buffers/docs/proto#enum
 
 message SearchRequest {
     required string query = 1;
